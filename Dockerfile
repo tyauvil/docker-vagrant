@@ -1,6 +1,6 @@
 FROM amazonlinux:2
 
-RUN yum install -y systemd openssh-server shadow-utils sudo &&\
+RUN yum install -y systemd openssh-clients openssh-server shadow-utils sudo &&\
     yum clean -y all &&\
     rm -rf /var/cache/yum
 
